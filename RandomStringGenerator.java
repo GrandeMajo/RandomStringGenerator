@@ -46,4 +46,31 @@ public class RandomStringGenerator {
 		
 		return sb.toString();
 	}
+	
+	
+	/**
+	 * Generate a string with random chars, numbers and, eventually, special chars (e.g. punctuation chars).
+	 * It is possible to avoid some chars in the result string.
+	 * This random generator is based on {@link Random}.
+	 * 
+	 * @param length specify the length of the result string
+	 * @param specialChars if true returns a string containing special chars, false otherwise
+	 * @param avoidChars string of chars that will not be used in the result string
+	 * @return a {@link String} with random alphanumeric content 
+	 */
+	public static String getRandomString(int length, boolean specialChars, String avoidChars) {
+		StringBuilder sb = new StringBuilder(length);
+		String string = (specialChars) ? SPECIAL_STRING : STRING;
+		int size = string.length();
+		
+		for(int i = 0; i < length; i++) {
+			char ch = string.charAt(random.nextInt(size));
+			if (avoidChars.contains(String.valueOf(ch)))
+				i--;
+			else
+				sb.append(ch);						
+		}
+		
+		return sb.toString();
+	}
 }
