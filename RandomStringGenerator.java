@@ -10,7 +10,7 @@ import java.util.Random;
 public class RandomStringGenerator {
 
 	private static final String STRING 			= "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	private static final String SPECIAL_STRING 	= "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzàèéìòù,;.:-_ç@°#§([{}])+*/|!£$%&/()=?^";
+	private static final String SPECIAL_STRING 	= "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzàèéìòù,;.:-_ç@°#([{}])+*/|!£$%&/()=?^~¡¢€£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ";
 	private static Random random = new Random();
 	
 	/**
