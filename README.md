@@ -1,5 +1,5 @@
 # RandomStringGenerator
-Java class to get random string of arbitrary lenght
+Java class to get random string of arbitrary lenght.
 
 To get random string of 10 chars simply write:
 
